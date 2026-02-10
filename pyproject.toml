@@ -52,9 +52,9 @@ package-data = { ApkPatcher = [
 
 
 [project.urls]
-Homepage = "https://github.com/TechnoIndian/ApkPatcher"
-Repository = "https://github.com/TechnoIndian/ApkPatcher.git"
-Issues = "https://github.com/TechnoIndian/ApkPatcher/issues"
+Homepage = "https://github.com/golambhai/ApkPatcher"
+Repository = "https://github.com/golambhai/ApkPatcher.git"
+Issues = "https://github.com/golambhai/ApkPatcher/issues"
 
 [tool.setuptools.dynamic]
 version = { file = "VERSION" }
