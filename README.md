@@ -37,11 +37,11 @@ pkg install python -y
 
 `💢 For Latest Commit ( From Main  Branch )  💢`
 
-    pip install --force-reinstall https://github.com/TechnoIndian/ApkPatcher/archive/refs/heads/main.zip
+    pip install --force-reinstall https://github.com/golambhai/ApkPatcher/archive/refs/heads/main.zip
 
 `OR`
 
-    pip install --force-reinstall https://github.com/TechnoIndian/ApkPatcher/archive/refs/heads/main.tar.gz
+    pip install --force-reinstall https://github.com/golambhai/ApkPatcher/archive/refs/heads/main.tar.gz
 
 `OR`
 
@@ -49,7 +49,7 @@ pkg install python -y
 
 **2nd. Method**
 
-    pkg install python git && pip install git+https://github.com/TechnoIndian/ApkPatcher.git
+    pkg install python git && pip install git+https://github.com/golambhai/ApkPatcher.git
 
 
 Uninstall ApkPatcher
