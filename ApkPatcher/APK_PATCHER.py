@@ -111,7 +111,7 @@ class UltimateDesign:
     
     @staticmethod
     def cyber_banner():
-        """Display Cyber Themed Banner with TCHC"""
+        """Display Cyber Themed Banner with TCHC (CHR removed)"""
         current_date = time.strftime('%d/%m/%y')
         banner = f"""
 {Colors.CYAN}╔══════════════════════════════════════════════════════════════════════════════╗
@@ -122,22 +122,24 @@ class UltimateDesign:
 {Colors.CYAN}║{Colors.RED}     ██║   ╚██████╗██║  ██║╚██████╔╝{Colors.GREEN}  ╚██████╗██║  ██║██║  ██║ {Colors.CYAN}║
 {Colors.CYAN}║{Colors.RED}     ╚═╝    ╚═════╝╚═╝  ╚═╝ ╚═════╝ {Colors.GREEN}   ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ {Colors.CYAN}║
 {Colors.CYAN}╠══════════════════════════════════════════════════════════════════════════════╣
-{Colors.CYAN}║{Colors.YELLOW}                  ████████╗ █████╗ ███╗   ██╗ ██████╗  █████╗ ██╗██╗     {Colors.CYAN}║
-{Colors.CYAN}║{Colors.YELLOW}                  ╚══██╔══╝██╔══██╗████╗  ██║██╔════╝ ██╔══██╗██║██║     {Colors.CYAN}║
-{Colors.CYAN}║{Colors.YELLOW}                     ██║   ███████║██╔██╗ ██║██║  ███╗███████║██║██║     {Colors.CYAN}║
-{Colors.CYAN}║{Colors.YELLOW}                     ██║   ██╔══██║██║╚██╗██║██║   ██║██╔══██║██║██║     {Colors.CYAN}║
-{Colors.CYAN}║{Colors.YELLOW}                     ██║   ██║  ██║██║ ╚████║╚██████╔╝██║  ██║██║███████╗{Colors.CYAN}║
-{Colors.CYAN}║{Colors.YELLOW}                     ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝{Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                  ████████╗ █████╗ ██╗   ██╗ ██████╗  █████╗ ██╗██╗     {Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                  ╚══██╔══╝██╔══██╗██║   ██║██╔════╝ ██╔══██╗██║██║     {Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                     ██║   ███████║██║   ██║██║  ███╗███████║██║██║     {Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                     ██║   ██╔══██║██║   ██║██║   ██║██╔══██║██║██║     {Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                     ██║   ██║  ██║╚██████╔╝╚██████╔╝██║  ██║██║███████╗{Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                     ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝{Colors.CYAN}║
 {Colors.CYAN}╠══════════════════════════════════════════════════════════════════════════════╣
 {Colors.CYAN}║{Colors.MAGENTA}           ╔═══════════════════════════════════════════════════════╗           {Colors.CYAN}║
 {Colors.CYAN}║{Colors.MAGENTA}           ║  {Colors.CYAN}TANGAIL CYBER HELP CENTER{Colors.MAGENTA}  |  {Colors.GREEN}BANGLADESH HACKING HELP CENTRE  {Colors.MAGENTA}║           {Colors.CYAN}║
 {Colors.CYAN}║{Colors.MAGENTA}           ╚═══════════════════════════════════════════════════════╝           {Colors.CYAN}║
 {Colors.CYAN}╠══════════════════════════════════════════════════════════════════════════════╣
-{Colors.CYAN}║{Colors.WHITE}                         ╔════════════════════════════╗                          {Colors.CYAN}║
-{Colors.CYAN}║{Colors.WHITE}                         ║  {Colors.RED}OWNER: ZX ROCK 007{Colors.WHITE}      ║                          {Colors.CYAN}║
-{Colors.CYAN}║{Colors.WHITE}                         ║  {Colors.YELLOW}VERSION: v{__version__:<11}{Colors.WHITE}║                          {Colors.CYAN}║
-{Colors.CYAN}║{Colors.WHITE}                         ║  {Colors.GREEN}DATE: {current_date}{Colors.WHITE}         ║                          {Colors.CYAN}║
-{Colors.CYAN}║{Colors.WHITE}                         ╚════════════════════════════╝                          {Colors.CYAN}║
+{Colors.CYAN}║{Colors.WHITE}                         ╔════════════════════════════════════╗                         {Colors.CYAN}║
+{Colors.CYAN}║{Colors.WHITE}                         ║                                    ║                         {Colors.CYAN}║
+{Colors.CYAN}║{Colors.WHITE}                         ║     {Colors.RED}OWNER: ZX ROCK 007{Colors.WHITE}            ║                         {Colors.CYAN}║
+{Colors.CYAN}║{Colors.WHITE}                         ║     {Colors.YELLOW}VERSION: v{__version__}{Colors.WHITE}               ║                         {Colors.CYAN}║
+{Colors.CYAN}║{Colors.WHITE}                         ║     {Colors.GREEN}DATE: {current_date}{Colors.WHITE}                ║                         {Colors.CYAN}║
+{Colors.CYAN}║{Colors.WHITE}                         ║                                    ║                         {Colors.CYAN}║
+{Colors.CYAN}║{Colors.WHITE}                         ╚════════════════════════════════════╝                         {Colors.CYAN}║
 {Colors.CYAN}╚══════════════════════════════════════════════════════════════════════════════╝{Colors.RESET}
 """
         print(banner)
