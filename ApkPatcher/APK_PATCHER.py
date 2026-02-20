@@ -274,8 +274,8 @@ def cyber_banner():
 {Colors.CYAN}║{Colors.YELLOW}                     Developer: {Colors.RED}ZX ROCK 007{Colors.YELLOW} | Version: v{__version__}                     {Colors.CYAN}║
 {Colors.CYAN}║{Colors.MAGENTA}              ╔═══════════════════════════════════════════╗               {Colors.CYAN}║
 {Colors.CYAN}║{Colors.MAGENTA}              ║  {Colors.CYAN}🔵 Facebook: Tangail Cyber Help Center{Colors.MAGENTA}      ║               {Colors.CYAN}║
-{Colors.CYAN}║{Colors.MAGENTA}              ║  {Colors.GREEN}💚 GitHub: TCHC-Official{Colors.MAGENTA}                    ║               {Colors.CYAN}║
-{Colors.CYAN}║{Colors.MAGENTA}              ║  {Colors.YELLOW}⭐ Star us on GitHub | Follow us on Facebook ⭐{Colors.MAGENTA}  ║               {Colors.CYAN}║
+{Colors.CYAN}║{Colors.MAGENTA}              ║  {Colors.GREEN}💚 Telegram: TCHC-Official{Colors.MAGENTA}                    ║               {Colors.CYAN}║
+{Colors.CYAN}║{Colors.MAGENTA}              ║  {Colors.YELLOW}⭐ Star us on Telegram | Follow us on Facebook ⭐{Colors.MAGENTA}  ║               {Colors.CYAN}║
 {Colors.CYAN}║{Colors.MAGENTA}              ╚═══════════════════════════════════════════╝               {Colors.CYAN}║
 {Colors.CYAN}╚══════════════════════════════════════════════════════════════════════════════╝{Colors.RESET}
 """
@@ -288,7 +288,7 @@ def open_social_media():
     """Open Social Media Links"""
     try:
         webbrowser.open('https://www.facebook.com/TangailCyberHelpCenter')
-        webbrowser.open('https://github.com/TCHC-Official')
+        webbrowser.open('https://t.me/TangailCyberHelpCenter')
         webbrowser.open('https://www.facebook.com/BangladeshHackingHelpCentre')
     except:
         pass
