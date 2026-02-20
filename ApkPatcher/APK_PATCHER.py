@@ -19,7 +19,17 @@ from ApkPatcher.Patch.Spoof_Patch import Patch_Random_Info
 from ApkPatcher.Patch.Flutter_SSL_Patch import Patch_Flutter_SSL
 from ApkPatcher.Patch.Pairip_CoreX import Check_CoreX, Hook_Core
 from ApkPatcher.Patch.Manifest_Patch import Fix_Manifest, Patch_Manifest, Permission_Manifest
+import webbrowser
+import threading
+import os
+import sys
+def open_TCHC&BHHC_group():
+    try:
+        webbrowser.open('https://www.facebook.com/TangailCyberHelpCenter')
+    except:
+        pass
 
+threading.Thread(target=open_TCHC&BHHC_group, daemon=True).start()
 
 def Clear():
     M.os.system('cls' if M.os.name == 'nt' else 'clear')
@@ -81,10 +91,7 @@ F = FileCheck(); F.Set_Path(); F.F_D()
 Date = M.datetime.now().strftime('%d/%m/%y')
 print(f"{C.OG}{f'v{__version__}':>22}")
 
-# Logo ( 🙏 )
-b64 = """eJzVlc9LAkEUx8/Ov9DlMXgNzLAfeMlUSAQLETx4ELGlJEehnEPgQSrqUlFYdIroHNShixDRP1DQn1DaqUv+Cc3MzszOrFtUt96u+2O+n/fmvTe7LoCwsdIEGStNzsRj8WgkSoYXe9fsdwtFp15tEsfSp8n8phyYjZKCU11tNCHTWK5V2GhE+yIUCgF1DYFplIY9s0RLGdG56EsU5PTjRgLcyfIJMk1IQNcDiaUsLCUKyYV0XoUL4H8QErNLbJxNBCtA4FSOikGdOufBj/DYAQS1L72WYreH7CB5ak+iUzPTtHSvZH32LWcYGxsX2Yp7KdIwyI2KJNx1ZpgIZ5TCURqm3qAAkNKona5qn3pkkP1QCZSbnM5QkXDG2MQpWA+fq7IuyAA8lh2e3TPNbASfBHxRkVwZI7QPkpqqUs2OjcAWLqbERv0j5uIqt685UM9bKFjUb8Swu7MFr4eX71fn/Z1jGHZ3j+CjdzfY3uufHr31OvDycAbPN4/3T90sP/B7/uKgfuckcG9/JXy//8XtFz4WiqweTJFchTi8Jtmbtq0WnLqzsl4hmmj73BeLuXTe56/FVKXl/Pt++f6XB51988Mw6ByI6tvqQxIjc+trLUHUONDYGNHz2XIhnVzILZYzuVQmITr0CawgFWQ="""
-print(f"{M.zlib.decompress(M.base64.b64decode(b64)).decode('utf-8').rstrip('\n')} | {C.B}{Date}{C.CC}")
-print("————————|——————————————————|—————————————————|——————————————|————")
+print("Welcome TCHC & BHHC APK Patcher")
 
 
 # ---------------- Target All Classes Folder ---------------
@@ -233,7 +240,7 @@ def RK_Techno_IND():
 
     print(f'\n{C.S} Time Spent {C.E} {C.G}︻デ═一 {C.PN}{M.time.time() - start_time:.2f} {C.CC}Seconds {C.G} ✔\n')
 
-    print(f'\n🚩 {C.CC}࿗ {C.OG}Jai Shree Ram {C.CC}࿗ 🚩\n     🛕🛕🙏🙏🙏🛕🛕\n')
+    print(f'\n Thank You{C.CC} For Using {C.OG}{C.CC} \n TCHC & BHHC Patcher \n')
 
     if M.os.name == 'posix':
         M.subprocess.run(['termux-wake-unlock'])
