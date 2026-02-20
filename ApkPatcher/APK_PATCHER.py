@@ -111,16 +111,16 @@ class UltimateDesign:
     
     @staticmethod
     def cyber_banner():
-        """Display Cyber Themed Banner with TCHC (CHR removed)"""
+        """Display Cyber Themed Banner with TCHC"""
         current_date = time.strftime('%d/%m/%y')
         banner = f"""
 {Colors.CYAN}╔══════════════════════════════════════════════════════════════════════════════╗
-{Colors.CYAN}║{Colors.RED}  ████████╗ ██████╗██╗  ██╗ ██████╗ {Colors.GREEN}  ██████╗██╗  ██╗██████╗  {Colors.CYAN}║
-{Colors.CYAN}║{Colors.RED}  ╚══██╔══╝██╔════╝██║  ██║██╔════╝ {Colors.GREEN}  ██╔════╝██║  ██║██╔══██╗ {Colors.CYAN}║
-{Colors.CYAN}║{Colors.RED}     ██║   ██║     ███████║██║  ███╗{Colors.GREEN}  ██║     ███████║██████╔╝ {Colors.CYAN}║
-{Colors.CYAN}║{Colors.RED}     ██║   ██║     ██╔══██║██║   ██║{Colors.GREEN}  ██║     ██╔══██║██╔══██╗ {Colors.CYAN}║
-{Colors.CYAN}║{Colors.RED}     ██║   ╚██████╗██║  ██║╚██████╔╝{Colors.GREEN}  ╚██████╗██║  ██║██║  ██║ {Colors.CYAN}║
-{Colors.CYAN}║{Colors.RED}     ╚═╝    ╚═════╝╚═╝  ╚═╝ ╚═════╝ {Colors.GREEN}   ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ {Colors.CYAN}║
+{Colors.CYAN}║{Colors.RED}  ████████╗ ██████╗██╗  ██╗ ██████╗ {Colors.RESET}                                  {Colors.CYAN}║
+{Colors.CYAN}║{Colors.RED}  ╚══██╔══╝██╔════╝██║  ██║██╔════╝ {Colors.RESET}                                  {Colors.CYAN}║
+{Colors.CYAN}║{Colors.RED}     ██║   ██║     ███████║██║  
+{Colors.CYAN}║{Colors.RED}     ██║   ██║     ██╔══██║██║   
+{Colors.CYAN}║{Colors.RED}     ██║   ╚██████╗██║  ██║╚██████╔╝{Colors.RESET}                                  {Colors.CYAN}║
+{Colors.CYAN}║{Colors.RED}     ╚═╝    ╚═════╝╚═╝  ╚═╝ ╚═════╝ {Colors.RESET}                                  {Colors.CYAN}║
 {Colors.CYAN}╠══════════════════════════════════════════════════════════════════════════════╣
 {Colors.CYAN}║{Colors.YELLOW}                  ████████╗ █████╗ ██╗   ██╗ ██████╗  █████╗ ██╗██╗     {Colors.CYAN}║
 {Colors.CYAN}║{Colors.YELLOW}                  ╚══██╔══╝██╔══██╗██║   ██║██╔════╝ ██╔══██╗██║██║     {Colors.CYAN}║
