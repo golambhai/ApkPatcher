@@ -110,24 +110,24 @@ class UltimateDesign:
     S_V = "│"
     
     @staticmethod
-    def cyber_banner():
-        """Display Cyber Themed Banner with TCHC"""
-        current_date = time.strftime('%d/%m/%y')
-        banner = f"""
+def cyber_banner():
+    """Display Cyber Themed Banner with TCHC"""
+    current_date = time.strftime('%d/%m/%y')
+    banner = f"""
 {Colors.CYAN}╔══════════════════════════════════════════════════════════════════════════════╗
 {Colors.CYAN}║{Colors.RED}  ████████╗ ██████╗██╗  ██╗ ██████╗ {Colors.RESET}                                  {Colors.CYAN}║
 {Colors.CYAN}║{Colors.RED}  ╚══██╔══╝██╔════╝██║  ██║██╔════╝ {Colors.RESET}                                  {Colors.CYAN}║
-{Colors.CYAN}║{Colors.RED}     ██║   ██║     ███████║██║  
-{Colors.CYAN}║{Colors.RED}     ██║   ██║     ██╔══██║██║   
+{Colors.CYAN}║{Colors.RED}     ██║   ██║     ███████║██║      {Colors.RESET}                                  {Colors.CYAN}║
+{Colors.CYAN}║{Colors.RED}     ██║   ██║     ██╔══██║██║      {Colors.RESET}                                  {Colors.CYAN}║
 {Colors.CYAN}║{Colors.RED}     ██║   ╚██████╗██║  ██║╚██████╔╝{Colors.RESET}                                  {Colors.CYAN}║
 {Colors.CYAN}║{Colors.RED}     ╚═╝    ╚═════╝╚═╝  ╚═╝ ╚═════╝ {Colors.RESET}                                  {Colors.CYAN}║
 {Colors.CYAN}╠══════════════════════════════════════════════════════════════════════════════╣
-{Colors.CYAN}║{Colors.YELLOW}                  ████████╗ █████╗ ██╗   ██╗ ██████╗  █████╗ ██╗██╗     {Colors.CYAN}║
-{Colors.CYAN}║{Colors.YELLOW}                  ╚══██╔══╝██╔══██╗██║   ██║██╔════╝ ██╔══██╗██║██║     {Colors.CYAN}║
-{Colors.CYAN}║{Colors.YELLOW}                     ██║   ███████║██║   ██║██║  ███╗███████║██║██║     {Colors.CYAN}║
-{Colors.CYAN}║{Colors.YELLOW}                     ██║   ██╔══██║██║   ██║██║   ██║██╔══██║██║██║     {Colors.CYAN}║
-{Colors.CYAN}║{Colors.YELLOW}                     ██║   ██║  ██║╚██████╔╝╚██████╔╝██║  ██║██║███████╗{Colors.CYAN}║
-{Colors.CYAN}║{Colors.YELLOW}                     ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝{Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                  ████████╗ █████╗ ████╗  ██╗ ██████╗  █████╗ ██╗██╗     {Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                  ╚══██╔══╝██╔══██╗██╔██╗ ██║██╔════╝ ██╔══██╗██║██║     {Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                     ██║   ███████║██║╚██╗██║██║  ███╗███████║██║██║     {Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                     ██║   ██╔══██║██║ ╚████║██║   ██║██╔══██║██║██║     {Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                     ██║   ██║  ██║██║  ╚███║╚██████╔╝██║  ██║██║███████╗{Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                     ╚═╝   ╚═╝  ╚═╝╚═╝   ╚══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝{Colors.CYAN}║
 {Colors.CYAN}╠══════════════════════════════════════════════════════════════════════════════╣
 {Colors.CYAN}║{Colors.MAGENTA}           ╔═══════════════════════════════════════════════════════╗           {Colors.CYAN}║
 {Colors.CYAN}║{Colors.MAGENTA}           ║  {Colors.CYAN}TANGAIL CYBER HELP CENTER{Colors.MAGENTA}  |  {Colors.GREEN}BANGLADESH HACKING HELP CENTRE  {Colors.MAGENTA}║           {Colors.CYAN}║
@@ -142,7 +142,7 @@ class UltimateDesign:
 {Colors.CYAN}║{Colors.WHITE}                         ╚════════════════════════════════════╝                         {Colors.CYAN}║
 {Colors.CYAN}╚══════════════════════════════════════════════════════════════════════════════╝{Colors.RESET}
 """
-        print(banner)
+    print(banner)
     
     @staticmethod
     def matrix_effect(text, delay=0.05):
