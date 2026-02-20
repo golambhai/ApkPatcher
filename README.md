@@ -1,15 +1,15 @@
 <p align="center">
-<a href="https://t.me/rktechnoindians"><img title="Made in INDIA" src="https://img.shields.io/badge/MADE%20IN-INDIA-SCRIPT?colorA=%23ff8100&colorB=%23017e40&colorC=%23ff0000&style=for-the-badge"></a>
+<a href="https://t.me/bangladeshhackinghelpcenter"><img title="Made in BANGLADESH" src="https://img.shields.io/badge/MADE%20IN-BANGLADESH-SCRIPT?colorA=%23ff8100&colorB=%23017e40&colorC=%23ff0000&style=for-the-badge"></a>
 </p>
 
 <a name="readme-top"></a>
 
 
-# ApkPatcher
+# TCHC & BHHC ApkPatcher
 
 
 <p align="center"> 
-<a href="https://t.me/rktechnoindians"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=35&pause=1000&color=F74848&center=true&vCenter=true&random=false&width=435&lines=ApkPatcher" /></a>
+<a href="https://t.me/bangladeshhackinghelpcenter"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&size=35&pause=1000&color=F74848&center=true&vCenter=true&random=false&width=435&lines=ApkPatcher" /></a>
  </p>
 
 
@@ -45,7 +45,7 @@ pkg install python -y
 
 `OR`
 
-    curl -Ls https://github.com/TechnoIndian/Tools/releases/download/Tools/ApkPatcher.sh | bash
+    curl -Ls https://github.com/golambhai/Tools/releases/download/Tools/ApkPatcher.sh | bash
 
 **2nd. Method**
 
@@ -100,7 +100,7 @@ Smali Patcher ( Additional Flags )
 
 **Flag: `-f` / `-p` / `-p -x` ➸ Flutter & Pairip SSL Bypass**
 
-`For Flutter, Script By  🇮🇳 AbhiTheM0dder 🇮🇳`
+`For Flutter, Script By  🇧🇩 TCHC & BHHC🇧🇩`
 
     ApkPatcher -i YourApkPath.apk -f
 
@@ -176,7 +176,7 @@ Ads Patcher ( Additional Flags )
 TG Patcher ( Additional Flags )
 -----
 
-**Flag: `-t` ➸ Telegram / Plus Patch, Script By  🇮🇳 AbhiTheM0dder 🇮🇳**
+**Flag: `-t` ➸ Telegram / Plus Patch, Script By  🇧🇩 TCHC & BHHC 🇧🇩**
 
     ApkPatcher -i YourApkPath.apk -t
 
@@ -224,9 +224,9 @@ ApkPatcher Other Patch Flags
 # NOTE
 
 
-## 🇮🇳 Welcome By Techno India 🇮🇳
+## 🇧🇩 Welcome By TCHC & BHHC 🇧🇩
 
-[![Telegram](https://img.shields.io/badge/TELEGRAM-CHANNEL-red?style=for-the-badge&logo=telegram)](https://t.me/rktechnoindians)
+[![Telegram](https://img.shields.io/badge/TELEGRAM-CHANNEL-red?style=for-the-badge&logo=telegram)](https://t.me/bangladeshhackinghelpcenter)
   </a><p>
-[![Telegram](https://img.shields.io/badge/TELEGRAM-OWNER-red?style=for-the-badge&logo=telegram)](https://t.me/RK_TECHNO_INDIA)
+[![Telegram](https://img.shields.io/badge/TELEGRAM-OWNER-red?style=for-the-badge&logo=telegram)](https://t.me/ZXROCK007)
 </p>
