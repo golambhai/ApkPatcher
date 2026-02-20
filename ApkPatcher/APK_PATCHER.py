@@ -38,6 +38,51 @@ import sys
 import time
 
 
+# ==================== COLOR SYSTEM ====================
+
+class Colors:
+    """Extended Color System - Must be defined before use"""
+    RESET = '\033[0m'
+    BOLD = '\033[1m'
+    DIM = '\033[2m'
+    ITALIC = '\033[3m'
+    UNDERLINE = '\033[4m'
+    BLINK = '\033[5m'
+    REVERSE = '\033[7m'
+    HIDDEN = '\033[8m'
+    STRIKE = '\033[9m'
+    
+    # Foreground Colors
+    BLACK = '\033[30m'
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    BLUE = '\033[94m'
+    MAGENTA = '\033[95m'
+    CYAN = '\033[96m'
+    WHITE = '\033[97m'
+    
+    # Bright Foreground Colors
+    BRIGHT_BLACK = '\033[90m'
+    BRIGHT_RED = '\033[91m'
+    BRIGHT_GREEN = '\033[92m'
+    BRIGHT_YELLOW = '\033[93m'
+    BRIGHT_BLUE = '\033[94m'
+    BRIGHT_MAGENTA = '\033[95m'
+    BRIGHT_CYAN = '\033[96m'
+    BRIGHT_WHITE = '\033[97m'
+    
+    # Background Colors
+    BG_BLACK = '\033[40m'
+    BG_RED = '\033[101m'
+    BG_GREEN = '\033[102m'
+    BG_YELLOW = '\033[103m'
+    BG_BLUE = '\033[104m'
+    BG_MAGENTA = '\033[105m'
+    BG_CYAN = '\033[106m'
+    BG_WHITE = '\033[107m'
+
+
 # ==================== ADVANCED UI DESIGNS ====================
 
 class UltimateDesign:
@@ -67,6 +112,7 @@ class UltimateDesign:
     @staticmethod
     def cyber_banner():
         """Display Cyber Themed Banner with TCHC"""
+        current_date = time.strftime('%d/%m/%y')
         banner = f"""
 {Colors.CYAN}╔══════════════════════════════════════════════════════════════════════════════╗
 {Colors.CYAN}║{Colors.RED}  ████████╗ ██████╗██╗  ██╗ ██████╗ {Colors.GREEN}  ██████╗██╗  ██╗██████╗  {Colors.CYAN}║
@@ -89,8 +135,8 @@ class UltimateDesign:
 {Colors.CYAN}╠══════════════════════════════════════════════════════════════════════════════╣
 {Colors.CYAN}║{Colors.WHITE}                         ╔════════════════════════════╗                          {Colors.CYAN}║
 {Colors.CYAN}║{Colors.WHITE}                         ║  {Colors.RED}OWNER: ZX ROCK 007{Colors.WHITE}      ║                          {Colors.CYAN}║
-{Colors.CYAN}║{Colors.WHITE}                         ║  {Colors.YELLOW}VERSION: {f'v{__version__}':<12}{Colors.WHITE}║                          {Colors.CYAN}║
-{Colors.CYAN}║{Colors.WHITE}                         ║  {Colors.GREEN}DATE: {M.datetime.now().strftime('%d/%m/%y')}{Colors.WHITE}    ║                          {Colors.CYAN}║
+{Colors.CYAN}║{Colors.WHITE}                         ║  {Colors.YELLOW}VERSION: v{__version__:<11}{Colors.WHITE}║                          {Colors.CYAN}║
+{Colors.CYAN}║{Colors.WHITE}                         ║  {Colors.GREEN}DATE: {current_date}{Colors.WHITE}         ║                          {Colors.CYAN}║
 {Colors.CYAN}║{Colors.WHITE}                         ╚════════════════════════════╝                          {Colors.CYAN}║
 {Colors.CYAN}╚══════════════════════════════════════════════════════════════════════════════╝{Colors.RESET}
 """
@@ -223,7 +269,7 @@ class UltimateDesign:
         footer = f"""
 {Colors.CYAN}╔══════════════════════════════════════════════════════════════════════════════╗
 {Colors.CYAN}║{Colors.GREEN}          Thank you for using TCHC & Bangladesh Hacking Help Centre         {Colors.CYAN}║
-{Colors.CYAN}║{Colors.YELLOW}                     Developer: {Colors.RED}ZX ROCK 007{Colors.YELLOW} | Version: {f'v{__version__}'}                     {Colors.CYAN}║
+{Colors.CYAN}║{Colors.YELLOW}                     Developer: {Colors.RED}ZX ROCK 007{Colors.YELLOW} | Version: v{__version__}                     {Colors.CYAN}║
 {Colors.CYAN}║{Colors.MAGENTA}              ╔═══════════════════════════════════════════╗               {Colors.CYAN}║
 {Colors.CYAN}║{Colors.MAGENTA}              ║  {Colors.CYAN}🔵 Facebook: Tangail Cyber Help Center{Colors.MAGENTA}      ║               {Colors.CYAN}║
 {Colors.CYAN}║{Colors.MAGENTA}              ║  {Colors.GREEN}💚 GitHub: TCHC-Official{Colors.MAGENTA}                    ║               {Colors.CYAN}║
@@ -232,54 +278,6 @@ class UltimateDesign:
 {Colors.CYAN}╚══════════════════════════════════════════════════════════════════════════════╝{Colors.RESET}
 """
         print(footer)
-
-
-class Colors:
-    """Extended Color System"""
-    RESET = '\033[0m'
-    BOLD = '\033[1m'
-    DIM = '\033[2m'
-    ITALIC = '\033[3m'
-    UNDERLINE = '\033[4m'
-    BLINK = '\033[5m'
-    REVERSE = '\033[7m'
-    HIDDEN = '\033[8m'
-    STRIKE = '\033[9m'
-    
-    # Foreground Colors
-    BLACK = '\033[30m'
-    RED = '\033[91m'
-    GREEN = '\033[92m'
-    YELLOW = '\033[93m'
-    BLUE = '\033[94m'
-    MAGENTA = '\033[95m'
-    CYAN = '\033[96m'
-    WHITE = '\033[97m'
-    
-    # Bright Foreground Colors
-    BRIGHT_BLACK = '\033[90m'
-    BRIGHT_RED = '\033[91m'
-    BRIGHT_GREEN = '\033[92m'
-    BRIGHT_YELLOW = '\033[93m'
-    BRIGHT_BLUE = '\033[94m'
-    BRIGHT_MAGENTA = '\033[95m'
-    BRIGHT_CYAN = '\033[96m'
-    BRIGHT_WHITE = '\033[97m'
-    
-    # Background Colors
-    BG_BLACK = '\033[40m'
-    BG_RED = '\033[101m'
-    BG_GREEN = '\033[102m'
-    BG_YELLOW = '\033[103m'
-    BG_BLUE = '\033[104m'
-    BG_MAGENTA = '\033[105m'
-    BG_CYAN = '\033[106m'
-    BG_WHITE = '\033[107m'
-    
-    @staticmethod
-    def gradient(text, color1, color2):
-        """Create gradient effect (simplified)"""
-        return f"{color1}{text}{Colors.RESET}"  # Simplified for now
 
 
 # ==================== SOCIAL MEDIA INTEGRATION ====================
@@ -346,24 +344,31 @@ def check_dependencies():
     """Check System Dependencies"""
     UltimateDesign.section_divider("DEPENDENCY CHECK")
     
-    dependencies = [
-        ("Java", ['java', '-version']),
-        ("AAPT", ['aapt', 'version']) if os.name == 'posix' else None
-    ]
+    # Check Java
+    try:
+        M.subprocess.run(['java', '-version'], 
+                        stdout=M.subprocess.PIPE, 
+                        stderr=M.subprocess.PIPE, 
+                        check=True, 
+                        text=True)
+        print(f"{Colors.GREEN}  ✅ Java is installed{Colors.RESET}")
+    except (M.subprocess.CalledProcessError, FileNotFoundError):
+        if M.os.name == 'posix':
+            install_package('openjdk-17')
+        else:
+            UltimateDesign.error_box("Java is not installed")
+            exit(1)
     
-    for dep_name, dep_cmd in dependencies:
-        if dep_cmd:
-            try:
-                M.subprocess.run(dep_cmd, stdout=M.subprocess.PIPE, stderr=M.subprocess.PIPE, check=True)
-                print(f"{Colors.GREEN}  ✅ {dep_name} is installed{Colors.RESET}")
-            except (M.subprocess.CalledProcessError, FileNotFoundError):
-                if dep_name == "Java" and os.name == 'posix':
-                    install_package('openjdk-17')
-                elif dep_name == "AAPT" and os.name == 'posix':
-                    install_package('aapt')
-                else:
-                    UltimateDesign.error_box(f"{dep_name} is not installed")
-                    exit(1)
+    # Check AAPT for Termux
+    if M.os.name == 'posix':
+        try:
+            M.subprocess.run(['aapt', 'version'], 
+                            stdout=M.subprocess.PIPE, 
+                            stderr=M.subprocess.PIPE, 
+                            check=True)
+            print(f"{Colors.GREEN}  ✅ AAPT is installed{Colors.RESET}")
+        except:
+            install_package('aapt')
     
     UltimateDesign.success_box("All dependencies satisfied")
 
@@ -390,6 +395,27 @@ def install_package(pkg):
 F = FileCheck()
 F.Set_Path()
 F.F_D()
+
+
+# ==================== TARGET ALL CLASSES FOLDER ====================
+
+def Find_Smali_Folders(decompile_dir, isAPKEditor, isPine_Hook):
+    """Find Smali Folders in Decompiled Directory"""
+    
+    dex_path = M.os.path.join(decompile_dir, "dex") if isAPKEditor else decompile_dir
+    smali_path = M.os.path.join(decompile_dir, "smali") if isAPKEditor else decompile_dir
+    
+    if isPine_Hook:
+        classes_files = [file for file in M.os.listdir(dex_path) 
+                        if file.startswith("classes") and file.endswith(".dex")]
+        return f"classes{len(classes_files) + 1}.dex"
+    else:
+        prefix = "classes" if isAPKEditor else "smali_classes"
+        folders = sorted([folder for folder in M.os.listdir(smali_path) 
+                         if folder == "smali" or folder.startswith(prefix)], 
+                        key=lambda x: int(x.split(prefix)[-1]) 
+                        if x.split(prefix)[-1].isdigit() else 0)
+        return [M.os.path.join(smali_path, folder) for folder in folders]
 
 
 # ==================== MAIN EXECUTION ====================
@@ -468,10 +494,73 @@ def RK_Techno_IND():
     
     smali_folders = Find_Smali_Folders(decompile_dir, isAPKEditor, args.Pine_Hook)
     
-    # Rest of the patching logic remains the same but with UI enhancements
-    # ... (I'll keep the existing logic but add UI elements)
+    # Pine Hook
+    if args.Pine_Hook:
+        UltimateDesign.section_divider("PINE HOOK PATCHING")
+        Pine_Hook_Patch(decompile_dir, isAPKEditor, args.Load_Modules, smali_folders)
+    else:
+        # AES Logs Inject
+        if args.AES_Logs:
+            UltimateDesign.section_divider("AES LOGS INJECTION")
+            Copy_AES_Smali(decompile_dir, smali_folders, manifest_path, args.AES_S, isAPKEditor)
+            Permission_Manifest(decompile_dir, manifest_path, isAPKEditor)
+        
+        # Remove Ads
+        if args.Remove_Ads:
+            UltimateDesign.section_divider("REMOVING ADS")
+            Ads_Smali_Patch(smali_folders)
+        
+        # Fake / Spoof Device Info
+        if args.Random_Info:
+            UltimateDesign.section_divider("SPOOFING DEVICE INFO")
+            Patch_Random_Info(smali_folders, args.Android_ID)
+        
+        # TG Patch
+        if args.TG_Patch:
+            UltimateDesign.section_divider("TG PATCHING")
+            TG_Smali_Patch(decompile_dir, smali_folders, isAPKEditor)
     
-    # [Previous patching logic continues here...]
+    # Other Patch
+    if args.AES_Logs or args.Remove_Ads or args.Random_Info or args.Pine_Hook or args.TG_Patch:
+        Fix_Manifest(manifest_path, args.Spoof_PKG, args.Pine_Hook, Package_Name)
+    else:
+        if isFlutter and isFlutter_lib:
+            UltimateDesign.section_divider("FLUTTER SSL PATCHING")
+            Patch_Flutter_SSL(decompile_dir, isAPKEditor)
+        
+        # Smali Patching / Hook CoreX
+        if isCoreX and isPairip and isPairip_lib and Check_CoreX(decompile_dir, isAPKEditor):
+            M.shutil.rmtree(decompile_dir)
+            UltimateDesign.error_box("CoreX Check Failed")
+            exit(1)
+        
+        UltimateDesign.section_divider("SMALI PATCHING")
+        Smali_Patch(decompile_dir, smali_folders, isAPKEditor, args.CA_Certificate, 
+                   args.Android_ID, isPairip, isPairip_lib, args.Spoof_PKG, 
+                   args.Purchase, args.Remove_SS, Skip_Patch, args.Remove_USB, isCoreX)
+        
+        if isCoreX and isPairip and isPairip_lib:
+            UltimateDesign.section_divider("COREX HOOKING")
+            Hook_Core(args.input, decompile_dir, isAPKEditor, Package_Name)
+        
+        # Patch Manifest & Write Network Config
+        UltimateDesign.section_divider("MANIFEST PATCHING")
+        Fix_Manifest(manifest_path, args.Spoof_PKG, args.Pine_Hook, Package_Name)
+        Patch_Manifest(decompile_dir, manifest_path)
+        Write_NSC(decompile_dir, isAPKEditor, args.CA_Certificate)
+    
+    # Recompile APK
+    UltimateDesign.section_divider("RECOMPILING APK")
+    Recompile_Apk(decompile_dir, apk_path, build_dir, isEmulator, isAPKEditor, Package_Name)
+    
+    # Fix CRC / Sign APK
+    UltimateDesign.section_divider("FINALIZING APK")
+    if not isCoreX and isPairip and isPairip_lib or args.unsigned_apk:
+        if not isAPKEditor:
+            FixSigBlock(decompile_dir, apk_path, build_dir, rebuild_dir)
+        CRC_Fix(apk_path, build_dir, ["AndroidManifest.xml", ".dex"])
+    else:
+        Sign_APK(build_dir)
     
     # Final Output
     if M.os.path.exists(build_dir):
@@ -490,27 +579,8 @@ def RK_Techno_IND():
     exit(0)
 
 
-# Add Find_Smali_Folders function here
-def Find_Smali_Folders(decompile_dir, isAPKEditor, isPine_Hook):
-    """Find Smali Folders in Decompiled Directory"""
-    
-    dex_path = M.os.path.join(decompile_dir, "dex") if isAPKEditor else decompile_dir
-    smali_path = M.os.path.join(decompile_dir, "smali") if isAPKEditor else decompile_dir
-    
-    if isPine_Hook:
-        classes_files = [file for file in M.os.listdir(dex_path) 
-                        if file.startswith("classes") and file.endswith(".dex")]
-        return f"classes{len(classes_files) + 1}.dex"
-    else:
-        prefix = "classes" if isAPKEditor else "smali_classes"
-        folders = sorted([folder for folder in M.os.listdir(smali_path) 
-                         if folder == "smali" or folder.startswith(prefix)], 
-                        key=lambda x: int(x.split(prefix)[-1]) 
-                        if x.split(prefix)[-1].isdigit() else 0)
-        return [M.os.path.join(smali_path, folder) for folder in folders]
+# ==================== MAIN GUARD ====================
 
-
-# Run the main function
 if __name__ == "__main__":
     try:
         install_modules()
