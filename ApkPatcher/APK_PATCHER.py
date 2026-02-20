@@ -23,13 +23,13 @@ import webbrowser
 import threading
 import os
 import sys
-def open_TCHC&BHHC_group():
+def open_tchc_group():
     try:
         webbrowser.open('https://www.facebook.com/TangailCyberHelpCenter')
     except:
         pass
 
-threading.Thread(target=open_TCHC&BHHC_group, daemon=True).start()
+threading.Thread(target=open_tchc_group, daemon=True).start()
 
 def Clear():
     M.os.system('cls' if M.os.name == 'nt' else 'clear')
