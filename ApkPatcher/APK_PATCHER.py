@@ -110,10 +110,10 @@ class UltimateDesign:
     S_V = "│"
     
     @staticmethod
-def cyber_banner():
-    """Display Cyber Themed Banner with TCHC"""
-    current_date = time.strftime('%d/%m/%y')
-    banner = f"""
+    def cyber_banner():  # এই লাইনে ইন্ডেন্টেশন ঠিক করতে হবে
+        """Display Cyber Themed Banner with TCHC"""
+        current_date = time.strftime('%d/%m/%y')
+        banner = f"""
 {Colors.CYAN}╔══════════════════════════════════════════════════════════════════════════════╗
 {Colors.CYAN}║{Colors.RED}  ████████╗ ██████╗██╗  ██╗ ██████╗ {Colors.RESET}                                  {Colors.CYAN}║
 {Colors.CYAN}║{Colors.RED}  ╚══██╔══╝██╔════╝██║  ██║██╔════╝ {Colors.RESET}                                  {Colors.CYAN}║
@@ -142,10 +142,11 @@ def cyber_banner():
 {Colors.CYAN}║{Colors.WHITE}                         ╚════════════════════════════════════╝                         {Colors.CYAN}║
 {Colors.CYAN}╚══════════════════════════════════════════════════════════════════════════════╝{Colors.RESET}
 """
-    print(banner)
+        print(banner)
     
     @staticmethod
     def matrix_effect(text, delay=0.05):
+      
         """Display text with matrix-like effect"""
         for char in text:
             sys.stdout.write(char)
